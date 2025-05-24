@@ -1,0 +1,231 @@
+AvatarState:
+  Enabled: true
+  Cooldown: 7200000
+  Duration: 480000
+  PlaySound: true
+  ShowParticles: true
+  GlowEnabled: false
+  Sound:
+    Sound: BLOCK_BEACON_ACTIVATE
+    Volume: 1
+    Pitch: 1.5
+  CanBeChiblocked: false
+LowHealth:
+  Enabled: true
+  Threshold: 4
+  BoostHealth:
+    Enabled: true
+    Amount: 2
+    YellowHearts: false
+  PreventDeath: false
+PotionEffects:
+  Regeneration: 3
+  Speed: 3
+  Resistance: 3
+  Fire_Resistance: 3
+Abilities:
+  _All:
+    Damage: x2.0
+    Cooldown: x0.5
+    ChargeTime: x0.5
+    Duration: x2.0
+    Range: x2.0
+    SelectRange: x3.0
+  Air:
+    AirBlast:
+      Push:
+        Entities: 4.5
+        Self: 4.0
+      Knockback: 4.5
+      SelfPush: 4.0
+      SelfKnockback: 4.0
+    AirSpout:
+      Height: 26
+    AirSuction:
+      Push: 3.5
+      Knockback: 3.5
+    AirSwipe:
+      Cooldown: 1000
+      Damage: 4.5
+      Push: 1.0
+      Range: 24
+      Radius: 0.25
+      Knockback: 1.0
+    AirBurst:
+      ChargeTime: 1000
+      Damage: 3
+    AirShield:
+      IsAvatarStateToggle: true
+      IsToggle: true
+    Suffocate:
+      Cooldown: 0
+      ChargeTime: 1000
+      Damage: 3
+      Range: 16
+    AirStream:
+      Range: 60
+      EntityCarry:
+        Height: 21
+        Duration: 20000
+    AirSweep:
+      Damage: 6
+      Range: 21
+      Knockback: 4
+    Twister:
+      Range: 24
+      Height: 12
+  Earth:
+    Catapult:
+      MaxDistance: 80
+      Cooldown: 0
+    LavaFlow:
+      ShiftCooldown: 1500
+      ClickLavaCooldown: 1500
+      ClickLandCooldown: 1500
+      ShiftPlatformRadius: 2
+      ClickRadius: 10
+      ShiftRadius: 12
+    MetalClips:
+      Cooldown: 2000
+      Range: 20
+      CrushDamage: 3
+    RaiseEarth:
+      Column:
+        Height: 8
+      Wall:
+        Height: 8
+        Width: 8
+    Collapse:
+      Column:
+        Height: 12
+      Wall:
+        Height: 12
+    EarthArmor:
+      Cooldown: 2000
+      GoldHearts: 6
+    EarthBlast:
+      Cooldown: 500
+      Damage: 5
+    EarthGrab:
+      Cooldown: 0
+      Height: 6
+      Radius: 6
+    Shockwave:
+      Range: 20
+      Cooldown: 0
+      ChargeTime: 1500
+      Damage: 5
+      Knockback: 2
+    EarthSmash:
+      SelectRange: 16
+      GrabRange: 16
+      ChargeTime: 1500
+      Cooldown: 0
+      MinimumDamage: 3
+      MaximumDamage: 7
+      Knockback: 4.5
+      FlightSpeed: 1.0
+      FlightTimer: 10000
+      ShootRange: 30
+    EarthTunnel:
+      Radius: 0.5
+  Fire:
+    Blaze:
+      Ring:
+        Range: 14
+    FireJet:
+      IsAvatarStateToggle: true
+      IsToggle: true
+    Lightning:
+      ChargeTime: 1500
+      Damage: 6
+      Cooldown: 1000
+    FireBurst:
+      ChargeTime: 1
+      Damage: 3
+      Cooldown: 0
+    FireBlast:
+      Charged:
+        ChargeTime: 1500
+        MinimumDamage: 3
+        MaximumDamage: 5
+    FireKick:
+      Damage: 5
+      Range: 9
+    FireSpin:
+      Damage: 5
+      Range: 9
+      Knockback: 3
+    FireWheel:
+      Damage: 5
+      Range: 35
+      Height: 3
+      Speed: 0.75
+      FireTicks: 4
+    WallOfFire:
+      Height: 6
+      Width: 6
+      Duration: 8000
+      Damage: 2
+      FireTicks: 2
+  Water:
+    OctopusForm:
+      AttackRange: 3
+      Radius: 4
+      Damage: 4
+      Knockback: 2
+    Surge:
+      Wall:
+        Radius: 4
+      Wave:
+        Radius: 20
+    Torrent:
+      InitialDamage: 4
+      SuccessiveDamage: 1.5
+      MaxHits: 3
+      Push: 1.5
+      Knockback: 1.5
+    WaterManipulation:
+      Damage: 5
+    IceBlast:
+      Damage: 4
+      Range: 30
+      Cooldown: 0
+    IceBullet:
+      Cooldown: 0
+      Damage: 4
+      Range: 16
+      MaxShots: 45
+      ShootTime: 12000
+    IceSpike:
+      Damage: 4
+      Range: 30
+      Push: 0.9
+      Height: 7
+      SlowPotency: 3
+      SlowDuration: 90
+      Field:
+        Damage: 3
+        Radius: 8
+        Push: 1.2
+        Knockback: 1.2
+      Blast:
+        Range: 30
+        Damage: 3
+        SlowPotency: 3
+        SlowDuration: 90
+      Knockback: 0.9
+    IceWave:
+      Damage: 4
+    WaterSpout:
+      Height: 20
+      Wave:
+        FlightDuration: 5000
+  Enabled: true
+  Cooldown: 7200000
+  Duration: 480000
+  PlaySound: true
+  Sound:
+    Sound: BLOCK_ANVIL_LAND
+    Volume: 1
+    Pitch: 1.5
